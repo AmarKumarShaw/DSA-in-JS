@@ -5,5 +5,5 @@ var reverseString = function(arr) {
         let temp = arr[i];
         arr[i] = arr[len - i - 1];
         arr[len - i - 1] = temp;
-    }
+    } 
 };   
