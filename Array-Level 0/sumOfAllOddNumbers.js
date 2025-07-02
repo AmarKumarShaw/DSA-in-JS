@@ -1,4 +1,4 @@
-// Sum of All Odd Array using Recursion 
+// Sum of All Odd in an Array using Recursion 
 
 function sumOdd(arr,index=0){
     
