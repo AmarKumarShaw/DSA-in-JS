@@ -39,6 +39,7 @@ function bubble(arr){
         if(!swapped){
             return;
         }
-        return arr;
+        
     }
+    return arr;
 }console.log(bubble(arr))
