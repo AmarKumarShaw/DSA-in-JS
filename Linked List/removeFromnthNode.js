@@ -32,3 +32,23 @@ var removeNthFromEnd = function(head, n) {
     // Return the new head of the modified list (skipping sentinel)
     return senitel.next;
 };
+
+// Approach 2 : Two Pointer Method (Optimal Time Complexity)
+var removeNthFromEnd = function(head, n) {
+    let senitel = new ListNode(0,head);
+    let first = senitel;
+  
+    for(let i=0;i<n;i++){
+      first = first.next;
+    }
+  
+    let second = senitel;
+    while(first.next !=null){
+      first = first.next;
+      second=second.next;
+    }
+    second.next = second.next.next
+    return senitel.next;
+  
+  
+  };
