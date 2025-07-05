@@ -1,5 +1,6 @@
 // LeetCode Problem Number -> 203 Remove Linked List
-
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 var removeElements = function(head, val) {
     // Create a new dummy node (sentinel) that points to the head of the list.
     // This helps handle edge cases where the head node itself needs to be removed.
