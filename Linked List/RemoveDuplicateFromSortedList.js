@@ -16,3 +16,19 @@ var deleteDuplicates = function(head) {
 
     return senitel.next; // Return the actual head (excluding dummy)
 };
+
+// Other Simple Approach to compare curr element and curr.next element
+// as the Linked List is sorted so we can do it  
+
+var deleteDuplicates = function(head) {
+    let curr = head;
+    while (curr && curr.next) {
+        if (curr.val === curr.next.val) {
+            curr.next = curr.next.next;
+        } else {
+            curr = curr.next;
+        }
+    }
+    return head;
+};
+    
