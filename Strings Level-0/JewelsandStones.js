@@ -16,3 +16,22 @@ var numJewelsInStones = function(jewels, stones) {
     }
     return count;
 };
+
+
+// Approach 2 : Using HashSet instead of using nested Loops 
+// Time Complexities : O(n)
+// Space Complexities : 0(1)
+var numJewelsInStones = function(jewels, stones) {
+    // Using HashSet 
+    let jSet = new Set();
+    for(let i =0;i<jewels.length;i++){
+        jSet.add(jewels[i])
+    }
+    let count =0;
+    for(let i=0; i<stones.length; i++){
+        if(jSet.has(stones[i])){
+            count++
+        }
+    }
+    return count;
+};
