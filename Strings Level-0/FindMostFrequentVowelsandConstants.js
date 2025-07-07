@@ -7,8 +7,6 @@
 
 // Output: 6
 
-
-
 var maxFreqSum = function(s) {
 
     // Initialize an empty object to store character frequencies
