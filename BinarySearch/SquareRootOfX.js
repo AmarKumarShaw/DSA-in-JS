@@ -47,7 +47,6 @@ var mySqrt = function(x) {
             left = mid + 1;
         }
     }
-
     // If exact square root not found, return the floor of it (last valid mid)
     return ans;
 };
